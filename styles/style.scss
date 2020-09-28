@@ -1,0 +1,149 @@
+// ########## Default ##########
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+}
+header, main, section, footer {
+  display: block;
+}
+
+// ########## Mobile View ##########
+.wrapper {
+  padding: 20px;
+  background: url('../images/bg-mobile.svg'), linear-gradient(to bottom, hsl(257, 40%, 49%), hsl(257, 38%, 56%));
+  background-repeat: no-repeat;
+
+  header {
+
+    img {
+      width: 150px;
+      height: 25pt;
+    }
+
+  }
+
+  main {
+
+    .illustrator {
+     margin: 60px 0;
+      img {
+        width: 300px;
+      }
+    }
+
+    .discussion {
+      text-align: center;
+
+      h1 {
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 15px;
+      }
+
+      button {
+        text-align: center;
+        margin-top: 20px;
+        color: hsl(257, 40%, 49%);
+        width: 200px;
+        padding: 10px 0;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+      }
+
+    }
+
+  }
+
+  .social {
+    text-align: center;
+    margin: 50px 0;
+
+    span {
+      border: 1px solid white;
+      border-radius: 50%;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+  }
+
+  footer {
+    text-align: center;
+    font-size: 0.74em;
+
+    #fspan {
+        padding-right: 10px;
+        border-right: 1px solid white;
+    }
+
+    #sspan {
+        padding-left: 10px;
+        border-left: 1px solid white;
+    }
+
+    a {
+        color: white;
+        text-decoration: underline;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+  }
+
+}
+
+
+// ########## Desktop View ##########
+@media screen and (min-width: 768px) {
+  .wrapper {
+    padding: 30px 150px 20px;
+    background: url('../images/bg-desktop.svg'), linear-gradient(to bottom, hsl(257, 40%, 49%), hsl(257, 38%, 56%));
+    background-repeat: no-repeat;
+
+    header {
+      width: auto;
+      height: auto;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      grid-gap: 2em;
+      margin: 100px 0 20px;
+
+      .illustrator {
+        margin: 0;
+        img {
+          width: auto;
+          height: auto;
+        }
+
+      }
+
+      .discussion {
+        text-align: left;
+
+        button {
+          width: 150px;
+        }
+      }
+
+    }
+
+    .social {
+      text-align: right;
+      margin: 0 0 30px;
+    }
+
+    footer {
+      font-size: 1em;
+    }
+
+  }
+}

@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+}
+
+header, main, section, footer {
+  display: block;
+}
+
+.wrapper {
+  padding: 20px;
+  background: url("../images/bg-mobile.svg"), -webkit-gradient(linear, left top, left bottom, from(#674baf), to(#7c64b9));
+  background: url("../images/bg-mobile.svg"), linear-gradient(to bottom, #674baf, #7c64b9);
+  background-repeat: no-repeat;
+}
+
+.wrapper header img {
+  width: 150px;
+  height: 25pt;
+}
+
+.wrapper main .illustrator {
+  margin: 60px 0;
+}
+
+.wrapper main .illustrator img {
+  width: 300px;
+}
+
+.wrapper main .discussion {
+  text-align: center;
+}
+
+.wrapper main .discussion h1 {
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 15px;
+}
+
+.wrapper main .discussion button {
+  text-align: center;
+  margin-top: 20px;
+  color: #674baf;
+  width: 200px;
+  padding: 10px 0;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.wrapper .social {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.wrapper .social span {
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.wrapper footer {
+  text-align: center;
+  font-size: 0.74em;
+}
+
+.wrapper footer #fspan {
+  padding-right: 10px;
+  border-right: 1px solid white;
+}
+
+.wrapper footer #sspan {
+  padding-left: 10px;
+  border-left: 1px solid white;
+}
+
+.wrapper footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+.wrapper footer a:hover {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    padding: 30px 150px 20px;
+    background: url("../images/bg-desktop.svg"), -webkit-gradient(linear, left top, left bottom, from(#674baf), to(#7c64b9));
+    background: url("../images/bg-desktop.svg"), linear-gradient(to bottom, #674baf, #7c64b9);
+    background-repeat: no-repeat;
+  }
+  .wrapper header {
+    width: auto;
+    height: auto;
+  }
+  .wrapper main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    grid-gap: 2em;
+    margin: 100px 0 20px;
+  }
+  .wrapper main .illustrator {
+    margin: 0;
+  }
+  .wrapper main .illustrator img {
+    width: auto;
+    height: auto;
+  }
+  .wrapper main .discussion {
+    text-align: left;
+  }
+  .wrapper main .discussion button {
+    width: 150px;
+  }
+  .wrapper .social {
+    text-align: right;
+    margin: 0 0 30px;
+  }
+  .wrapper footer {
+    font-size: 1em;
+  }
+}
+/*# sourceMappingURL=style.css.map */
