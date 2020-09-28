@@ -55,14 +55,16 @@ header, main, section, footer {
 }
 
 .wrapper .social {
+  padding: 10px;
   text-align: center;
   margin: 50px 0;
 }
 
-.wrapper .social span {
+.wrapper .social img {
   border: 1px solid white;
+  padding: 5px;
+  margin-left: 5px;
   border-radius: 50%;
-  padding: 5px 10px;
   cursor: pointer;
 }
 

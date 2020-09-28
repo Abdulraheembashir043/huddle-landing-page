@@ -60,13 +60,15 @@ header, main, section, footer {
   }
 
   .social {
+    padding: 10px;
     text-align: center;
     margin: 50px 0;
 
-    span {
+    img {
       border: 1px solid white;
+      padding: 5px;
+      margin-left: 5px;
       border-radius: 50%;
-      padding: 5px 10px;
       cursor: pointer;
     }
   }
