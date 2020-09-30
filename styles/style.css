@@ -99,12 +99,10 @@ header, main, section, footer {
     background: url("../images/bg-desktop.svg"), linear-gradient(to bottom, #674baf, #7c64b9);
     background-repeat: no-repeat;
   }
-
   .wrapper header {
     width: auto;
     height: auto;
   }
-
   .wrapper main {
     display: -ms-grid;
     display: grid;
@@ -116,32 +114,25 @@ header, main, section, footer {
     grid-gap: 2em;
     margin: 100px 0 20px;
   }
-
   .wrapper main .illustrator {
     margin: 0;
   }
-
   .wrapper main .illustrator img {
     width: auto;
     height: auto;
   }
-
   .wrapper main .discussion {
     text-align: left;
   }
-
   .wrapper main .discussion button {
     width: 150px;
   }
-
   .wrapper .social {
     text-align: right;
     margin: 0 0 30px;
   }
-
   .wrapper footer {
     font-size: 1em;
   }
-  
 }
 /*# sourceMappingURL=style.css.map */
